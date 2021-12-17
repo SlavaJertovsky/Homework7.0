@@ -1,0 +1,151 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url(/img/Footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 56px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-flex__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 135px;
+  margin: 12px;
+  align-items: flex-start;
+}
+
+.footer-flex__item a {
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: #7E92B2;
+}
+
+.footer-flex__item h3 {
+  margin-bottom: 27px;
+}
+
+.footer-flex__item__follow {
+  margin-left: 164px;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #5A6980;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.social img {
+  padding: 4px;
+  margin-bottom: 35px;
+}
+
+input {
+  border-radius: 85px;
+  background: linear-gradient(130.17deg, rgba(255, 255, 255, 0.136) 2.38%, rgba(255, 255, 255, 0.85) 98.89%);
+  width: 325px;
+  height: 36px;
+  border: 2px solid #FFFFFF;
+  padding-left: 35px;
+}
+
+.form_group {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 29px;
+  height: 29px;
+  background-image: url(/img/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+span {
+  position: absolute;
+  left: 10px;
+  top: 25%;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #B4D2FF;
+  margin-top: 38px;
+}
+
+.left, .right {
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .footer-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-flex__item__follow {
+    margin-left: 1px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-flex__item {
+    flex-basis: 101px;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left {
+    margin-left: 1px;
+  }
+}
+
+@media (max-width: 375px) {
+  input {
+    width: 280px;
+    margin-left: -10px;
+  }
+  .left img {
+    margin-left: -30px;
+  }
+  .right {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  input {
+    width: 240px;
+  }
+  .form_group {
+    margin-left: 20px;
+  }
+  .left img {
+    width: 275px;
+    margin-left: -29px;
+  }
+  .right img {
+    width: 210px;
+    margin-left: -6px;
+  }
+}
